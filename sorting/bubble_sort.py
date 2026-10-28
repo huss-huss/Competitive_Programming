@@ -49,8 +49,4 @@ def swap_report(a: list[int]) -> str:
     if not a:
         raise ValueError("array must not be empty")
     swaps = count_swaps(a)
-    return (
-        f"Array is sorted in {swaps} swaps.\n"
-        f"First Element: {a[0]}\n"
-        f"Last Element: {a[-1]}"
-    )
+    return f"Array is sorted in {swaps} swaps.\nFirst Element: {a[0]}\nLast Element: {a[-1]}"
